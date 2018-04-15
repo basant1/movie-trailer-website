@@ -1,6 +1,8 @@
 import fresh_tomatoes
 import media
 
+"""Create six Movie instances each with title, storyline, poster image, and YouTube trailer of the class Movie defined in media.py."""
+
 thor_ragnarok = media.Movie("Thor: Ragnarok", 
                         "Thor is imprisoned on the other side of the universe without his mighty hammer and finds himself in a race against time to get Back to Asgard to stop Ragnarok", "https://upload.wikimedia.org/wikipedia/en/7/7d/Thor_Ragnarok_poster.jpg", "https://www.youtube.com/watch?v=ue80QwXMRHg")
 
@@ -28,5 +30,6 @@ avengers_infinity_war = media.Movie("Avengers: Infinity War",
                            "https://upload.wikimedia.org/wikipedia/en/4/4d/Avengers_Infinity_War_poster.jpg",
                            "https://www.youtube.com/watch?v=6ZfuNTqbHE8")
 
+# Add instances to a list
 movies = [thor_ragnarok, black_panther, spiderman_homecoming, doctor_strange, captain_america_civil_war, avengers_infinity_war]
 fresh_tomatoes.open_movies_page(movies)
