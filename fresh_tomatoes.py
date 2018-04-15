@@ -40,7 +40,7 @@ main_page_head = '''
             padding-top: 20px;
         }
         .movie-tile:hover {
-            background-color: #EEE;
+            background-color: #ab2e2e;
             cursor: pointer;
         }
         .scale-media {
@@ -55,6 +55,12 @@ main_page_head = '''
             left: 0;
             top: 0;
             background-color: white;
+        }
+        .blk {
+            color: #000000;
+        }
+        .bkgd-size {
+            background-size: 100% 100%;";
         }
     </style>
     <script type="text/javascript" charset="utf-8">
@@ -88,7 +94,7 @@ main_page_head = '''
 
 # The main page layout and title bar
 main_page_content = '''
-  <body>
+  <body class="bkgd-size" background="https://images7.alphacoders.com/532/532650.jpg">
     <!-- Trailer Video Modal -->
     <div class="modal" id="trailer">
       <div class="modal-dialog">
@@ -107,7 +113,7 @@ main_page_content = '''
       <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
         <div class="container">
           <div class="navbar-header">
-            <a class="navbar-brand" href="#">Fresh Tomatoes Movie Trailers</a>
+            <a class="navbar-brand" href="#">Fresh Tomatoes Movie Trailers <small>by Basant Singh<small></a>
           </div>
         </div>
       </div>
@@ -124,7 +130,7 @@ main_page_content = '''
 movie_tile_content = '''
 <div class="col-md-6 col-lg-4 movie-tile text-center" data-trailer-youtube-id="{trailer_youtube_id}" data-toggle="modal" data-target="#trailer">
     <img src="{poster_image_url}" width="220" height="342">
-    <h2>{movie_title}</h2>
+    <h2 class="blk">{movie_title}</h2>
 </div>
 '''
 
